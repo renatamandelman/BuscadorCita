@@ -39,7 +39,7 @@ const Form = ({cita, setCita}) => {
 }
     return (
       <>
-      <h2>Crear mi cita</h2>
+      <h2 style={{color:'white'}}>Crear mi cita</h2>
       <div className="centrado">
           <label>Nombre Mascota</label><br/>
           <input type="text" name="mascota" className="u-full-width mb-3" placeholder="Nombre mascota" onChange={NombreHandler} value={nombreMascota} /><br/>

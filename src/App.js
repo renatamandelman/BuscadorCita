@@ -1,22 +1,26 @@
 import './App.css';
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react'
 import Form from './components/Form'
+import Cita from './components/cita'
 
 function App() {
   const [cita, setCita] = useState([]);
 
   useEffect(() => {
     console.log(cita);
-  },[cita])
+  }, [cita])
 
-  return(
+  return (
     <div className='home'>
-    <div className='form'>
-    <Form cita={cita} setCita={setCita}/>
-
+      <h1 className='w-100'>Gestor de citas:</h1> 
+      <div className='form'>
+        <Form cita={cita} setCita={setCita} />
+        
+      </div>
+     
     </div>
-   </div>
-    )
+
+  )
 }
 
 export default App;
