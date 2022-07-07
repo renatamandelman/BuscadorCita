@@ -1,26 +1,25 @@
 import './App.css';
 import { useEffect, useState } from 'react'
 import Form from './components/Form'
-import Cita from './components/cita'
+import ListadoCita from './components/ListadoCita';
 
 function App() {
-  const [cita, setCita] = useState([]);
+    const [cita, setCita] = useState([]);
 
-  useEffect(() => {
-    console.log(cita);
-  }, [cita])
+    return (
+        <div className='container'>
+            <h1 className='mb-3 text-center'>Gestor de citas:</h1> 
 
-  return (
-    <div className='home'>
-      <h1 className='w-100'>Gestor de citas:</h1> 
-      <div className='form'>
-        <Form cita={cita} setCita={setCita} />
-        
-      </div>
-     
-    </div>
-
-  )
+            <div className='row'>
+                <div className='col-md-4'>
+                    <Form cita={cita} setCita={setCita} />
+                </div>
+                <div className='col-md-8'>
+                    <ListadoCita cita={cita} setCita={setCita} />
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default App;
