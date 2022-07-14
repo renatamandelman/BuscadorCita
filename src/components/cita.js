@@ -4,6 +4,7 @@ const Cita = ({ cita, eliminar }) => {
     return (
         <div class="card">
             <div class="card-body">
+           
                 <p>Nombre de la mascota: <span>{cita.nombreMascota}</span></p>
                 <p>Nombre del dueño: <span>{cita.duenio}</span></p>
                 <p>Fecha: <span>{cita.fecha}</span></p>

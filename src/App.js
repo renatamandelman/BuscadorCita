@@ -8,7 +8,7 @@ function App() {
 
     return (
         <div className='container'>
-            <h1 className='mb-3 text-center'>Gestor de citas:</h1> 
+            <h1 className='mb-3 text-center'>Gestor de citas</h1>
 
             <div className='row'>
                 <div className='col-md-4'>
